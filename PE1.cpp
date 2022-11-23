@@ -19,11 +19,11 @@ int main(int argc, char **argv)
     int stepper1 = limit1, stepper2 = limit1;
     while (stepper1 % div1) {stepper1 += 1;}
     while (stepper2 % div2) {stepper2 += 1;}
-    while (stepper1 <= limit2) {
+    while (stepper1 < limit2) {
         included.insert(stepper1);
         stepper1 += div1;
     }
-    while (stepper2 <= limit2) {
+    while (stepper2 < limit2) {
         included.insert(stepper2);
         stepper2 += div2;
     }

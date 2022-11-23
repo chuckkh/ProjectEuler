@@ -6,7 +6,7 @@ uplim = 1000
 div1 = 3
 div2 = 5
 
-
+uplim -= 1
 
 
 def method1(div1, div2, lolim, uplim):
