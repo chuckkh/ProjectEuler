@@ -19,3 +19,10 @@ def PEnumberOfDivisors(inp):
         if not inp % i:
             outp += 1
     return outp
+
+def PEdigitSum(inp):
+    total = 0
+    while inp:
+        total += inp%10
+        inp//=10
+    return total
