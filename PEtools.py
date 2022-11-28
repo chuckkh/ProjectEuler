@@ -13,7 +13,45 @@ def PEisPrime(inp):
             fact += 2
         return True
 
+def PEfindPrimesUntil(inp):
+    if inp < 2: return []
+    elif inp == 2: return [2]
+    else:
+        pr = [2]
+        val = 3
+        while val <= inp:
+            prime = True
+            for p in pr:
+                if not val % p:
+                    prime = False
+                    break
+            if prime:
+                pr.append(val)
+            val += 2
+        return pr
+                
+        
+def PEfindPrimesUntilHalf(inp):
+    if inp < 2: return []
+    elif inp == 2: return [2]
+    else:
+        pr = [2]
+        val = 3
+        while val < inp//2+1:
+            prime = True
+            for p in pr:
+                if not val % p:
+                    prime = False
+                    break
+            if prime:
+                pr.append(val)
+            val += 2
+        return pr
+                
+        
+    
 def PEnumberOfDivisors(inp):
+    '''This includes 1 and n'''
     outp = 2
     for i in range(2,inp//2+1):
         if not inp % i:
