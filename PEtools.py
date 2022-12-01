@@ -64,3 +64,15 @@ def PEdigitSum(inp):
         total += inp%10
         inp//=10
     return total
+
+def PElowerWithCommonFactors(inp):
+    total = 0
+    primes = PEfindPrimesUntilHalf(inp)
+    for i in range(2,inp):
+        for prime in primes:
+            if not i % prime and not inp % prime:
+                total += 1
+                break
+        
+    return total
+    
