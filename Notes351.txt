@@ -1,0 +1,17 @@
+2 adds
+	1
+	2
+	3
+	4
+	until the limit
+3 adds
+	1
+	2
+5 adds
+	1
+
+
+
+
+Every pair with common factors...
+	
