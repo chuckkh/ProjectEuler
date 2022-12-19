@@ -17,6 +17,7 @@ while True:
             else:
                 lastGap = gap
                 gap = seed//gap
+                seed = gap*int(lastGap*5.5)
     seed += gap
 
 # Explorations...
