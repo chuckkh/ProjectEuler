@@ -4,7 +4,7 @@ def isTriangle(n):
 lastGap = 5
 gap = 17
 
-seed = gap*int(lastGap*5)
+seed = gap*int(lastGap*5.5)
 while True:
     test = (seed*seed-seed)
     if isTriangle(test):
